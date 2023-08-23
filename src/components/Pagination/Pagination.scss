@@ -1,0 +1,26 @@
+@import '../../mixins';
+
+.pagination {
+  flex-wrap: wrap;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 16px;
+  background-color: white;
+  width: 100vw;
+
+  &__pages-dots {
+    cursor: default !important;
+  }
+
+  &__pages-page.active {
+    background-color: var(--accent-11) !important;
+  }
+
+  @include sm {
+    position: relative;
+    width: auto;
+    flex-wrap: nowrap;
+  }
+}

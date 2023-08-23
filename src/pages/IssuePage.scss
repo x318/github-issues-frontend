@@ -1,0 +1,15 @@
+.issue-page {
+  .issue-comment:not(.issue-page__root-issue) {
+    position: relative;
+    &::before {
+      background-color: var(--gray-6);
+      bottom: 0;
+      content: '';
+      display: block;
+      position: absolute;
+      left: var(--space-3);
+      top: -12px;
+      width: 3px;
+    }
+  }
+}

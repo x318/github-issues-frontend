@@ -1,0 +1,15 @@
+.logs-table {
+  &__column-method {
+    & > div {
+      border-radius: var(--radius-4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2px;
+      color: #fff;
+    }
+    &.get > div {
+      background-color: red;
+    }
+  }
+}

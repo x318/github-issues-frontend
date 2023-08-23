@@ -1,0 +1,36 @@
+@import '../../mixins.scss';
+
+.header {
+  border-bottom: 1px solid var(--gray-8);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 8px 16px;
+  }
+
+  &__left {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__stats {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  @include sm {
+    &__container {
+      padding: 16px;
+    }
+  }
+}

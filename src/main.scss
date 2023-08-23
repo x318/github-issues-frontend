@@ -1,0 +1,58 @@
+@import './markdown';
+@import 'mixins';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+hr {
+  border: none;
+  margin: var(--space-2) 0;
+  background-color: var(--gray-6);
+  height: 1px;
+}
+
+.width-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__main {
+    padding: 16px 16px;
+  }
+
+  @include sm {
+    &__main {
+      padding-top: 32px;
+    }
+  }
+}
+
+.page-loader {
+  height: 100vh;
+
+  div {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.flex-1 {
+  flex: 1;
+}

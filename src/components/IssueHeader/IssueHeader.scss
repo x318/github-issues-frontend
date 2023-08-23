@@ -1,0 +1,26 @@
+.issue-header {
+
+  &__status {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 4px;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: var(--radius-5);
+
+    &--closed {
+      background-color: var(--tomato-8);
+    }
+
+    &--open {
+      background-color: var(--green-8);
+    }
+  }
+
+  &__link {
+    color: var(--accent-10);
+    text-decoration: underline;
+    white-space: nowrap;
+  }
+}
