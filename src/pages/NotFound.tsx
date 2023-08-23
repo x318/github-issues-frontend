@@ -1,5 +1,12 @@
+import { Heading } from '@radix-ui/themes';
+import LayoutBase from '@/layouts/LayoutBase';
+
 const NotFound = () => {
-  return 'Not found';
+  return (
+    <LayoutBase>
+      <Heading>Page not found :(</Heading>
+    </LayoutBase>
+  );
 };
 
 export default NotFound;

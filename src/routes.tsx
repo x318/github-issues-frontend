@@ -8,7 +8,7 @@ const IssuePage = React.lazy(() => import('./pages/IssuePage'));
 const StatsPage = React.lazy(() => import('./pages/StatsPage'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
 
-const withSuspense = (Component: React.LazyExoticComponent<() => React.ReactNode>) => (
+const withSuspense = (Component: React.LazyExoticComponent<() => JSX.Element>) => (
   <Suspense
     fallback={
       <Flex width="100%" justify="center" align="center" className="page-loader">
